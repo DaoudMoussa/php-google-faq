@@ -1,0 +1,23 @@
+.questions {
+    padding: $spacing * 3  0;
+
+    .question {
+        padding: $spacing * 2 0;
+
+        h2 {
+            color: darken($secondaryTextColor, 10%);
+            font-size: $fontSize * 1.7;
+            line-height: 1.4;
+            margin-bottom: $spacing * 1.5;
+        }
+        p {
+            margin-bottom: $spacing * 1.5;
+            letter-spacing: 0.2px;
+
+            a, a:visited {
+                text-decoration: none;
+                color: $secondaryColor;
+            }
+        }
+    }
+}

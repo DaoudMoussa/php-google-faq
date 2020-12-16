@@ -40,18 +40,28 @@ $faqs = [
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Domande frequenti</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="public/app.css">
+
     </head>
     <body>
-        <?php
-            foreach ($faqs as $value) {?>
-                <h2><?php echo $value['question'] ?></h2>
-                <div>
-                    <?php foreach ($value['answer'] as $paragraph) { ?>
-                        <p><?php echo $paragraph ?></p> <?php
-                    } ?>
-                </div> <?php
-            }
-        ?>
+        <div class="container">
+            <div class="questions">
+                <?php
+                foreach ($faqs as $value) {?>
+                    <div class="question">
+                        <h2><?php echo $value['question'] ?></h2>
+                        <div>
+                            <?php foreach ($value['answer'] as $paragraph) { ?>
+                                <p><?php echo $paragraph ?></p> <?php
+                            } ?>
+                        </div>
+                    </div> <?php
+                }
+                ?>
+            </div>
+        </div>
     </body>
 </html>

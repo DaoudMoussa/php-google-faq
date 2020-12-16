@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.container {
+  max-width: 978px;
+  margin: 0 auto;
+}
+
+.questions {
+  padding: 45px 0;
+}
+
+.questions .question {
+  padding: 30px 0;
+}
+
+.questions .question h2 {
+  color: #474a4d;
+  font-size: 23.8px;
+  line-height: 1.4;
+  margin-bottom: 22.5px;
+}
+
+.questions .question p {
+  margin-bottom: 22.5px;
+  letter-spacing: 0.2px;
+}
+
+.questions .question p a,
+.questions .question p a:visited {
+  text-decoration: none;
+  color: #3367d6;
+}
+
