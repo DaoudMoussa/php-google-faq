@@ -103,5 +103,32 @@ $faqs = [
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="container">
+                <div class="left-footer">
+                    <ul>
+                        <li>
+                            <a href="">Google</a>
+                        </li>
+                        <li>
+                            <a href="">Tutto su google</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="">Termini</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rigth-footer">
+                    <select class="" name="">
+                        <option value="it">Italiano</option>
+                        <option value="en">English</option>
+                        <option value="fr">Francais</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

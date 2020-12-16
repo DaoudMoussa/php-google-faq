@@ -1,0 +1,35 @@
+footer {
+    height: 45px;
+    background-color: #f5f5f5;
+    padding: $spacing;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                float: left;
+                font-size: $fontSize * 0.9;
+
+                &:not(:first-child)::before {
+                    content: '\00B7';
+                    display: inline-block;
+                    margin: 0 $spacing / 3;
+                    float: left;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $secondaryTextColor;
+                    float: left;
+                }
+            }
+        }
+    }
+
+
+}
