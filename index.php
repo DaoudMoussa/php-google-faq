@@ -41,27 +41,48 @@ $faqs = [
     <head>
         <meta charset="utf-8">
         <title>Domande frequenti</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="public/app.css">
-
     </head>
     <body>
-        <div class="container">
-            <div class="questions">
-                <?php
-                foreach ($faqs as $value) {?>
-                    <div class="question">
-                        <h2><?php echo $value['question'] ?></h2>
-                        <div>
-                            <?php foreach ($value['answer'] as $paragraph) { ?>
-                                <p><?php echo $paragraph ?></p> <?php
-                            } ?>
-                        </div>
-                    </div> <?php
-                }
-                ?>
+        <header>
+            <div class="header-top">
+                <div class="left">
+                    <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Logo google">
+                    <a href="#" class="website-section">Privacy e termini</a>
+                </div>
+
+                <div class="right">
+                    <a href="#" class="header-button">
+                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="">
+                    </a>
+                    <a href="#" class="header-button">
+                        <i class="fas fa-ellipsis-v"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                </div>
             </div>
-        </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="questions">
+                    <?php
+                    foreach ($faqs as $value) {?>
+                        <div class="question">
+                            <h2><?php echo $value['question'] ?></h2>
+                            <div>
+                                <?php foreach ($value['answer'] as $paragraph) { ?>
+                                    <p><?php echo $paragraph ?></p> <?php
+                                } ?>
+                            </div>
+                        </div> <?php
+                    }
+                    ?>
+                </div>
+            </div>
+        </main>
     </body>
 </html>

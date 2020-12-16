@@ -15,6 +15,59 @@ body {
   margin: 0 auto;
 }
 
+header {
+  height: 70px;
+  border-bottom: 1px solid #5f6368;
+}
+
+header a {
+  color: #5f6368;
+  text-decoration: none;
+}
+
+header .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+header .header-top .left {
+  display: flex;
+  align-items: center;
+}
+
+header .header-top .left .website-section {
+  margin-left: 7.5px;
+  font-size: 23.8px;
+}
+
+header .header-top .right .header-button {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 16.8px;
+  transition: background-color 0.2s;
+}
+
+header .header-top .right .header-button:not(:first-child) {
+  margin-right: 7.5px;
+}
+
+header .header-top .right .header-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+header .header-top .right .header-button img {
+  width: 100%;
+  border-radius: 50%;
+}
+
 .questions {
   padding: 45px 0;
 }
